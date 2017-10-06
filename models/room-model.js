@@ -7,9 +7,7 @@ const myRoomSchema = new Schema(
     name: { type: String},
     description: {type: String},
     photoUrl: {type: String},
-    hasGhosts: {type: Boolean, default: false},
-    hasMonstersUnderTheBed: {type: Boolean, default: false},
-
+    hasPets: {type: Boolean, default: true},
     // the id of the user who owns the room
     owner: { type: Schema.Types.ObjectId }
   },

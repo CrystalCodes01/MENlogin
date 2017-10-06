@@ -1,15 +1,10 @@
-<h2> Sign up </h2>
+<h2 class="container text-center"> Sign up </h2>
 
-<p> Sign up to this awesome app. </p>
+<p class="container text-center"> Sign up to this awesome app. </p>
 
-<!-- , ADDED AFTER YOU LEFT -->
-
-<!-- We use typeof here to avoid an error
-      since the variable sometimes doesn't exist. -->
 <% if (typeof messageForUsers === 'string'){ %>
   <p class='error-message'> <%= messageForUsers %> </p>
 <% } %>
-<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
 
 
 <form id='form' method='post' action='/signup'>
@@ -23,14 +18,14 @@
 
   <label for='password-input'> Password </label>
   <input id='password-input' type='password' name='signupPassword' placeholder=''>
-  <br>
-
-
+  <br><br>
 
   <button> Sign Up </button>
 </form>
 
+<div class="container text-center">
 <a href='/auth/facebook'> Log In with Facebook </a>
-<br>
+<br><br>
 <a href='/auth/google'> Log In with Google </a>
 <br>
+</div>

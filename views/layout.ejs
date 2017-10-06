@@ -8,17 +8,16 @@
   </head>
   <body>
     <header class="container text-center">
-      <nav>
+      <nav class="container text-center">
         <a href='/'> Home </a>
         &nbsp;
       <%  if (typeof currentUser === 'object') { %>
          <!-- If the logged in user variable -->
-              <a href='/special'> Special Place for Logged-In Users </a>
-              <br>
-              <a href='/logout'> Log Out </a>
-              <br>
+              <a href='/special'> Unicorn </a>
+              &nbsp;&nbsp;&nbsp;
               <a href='/rooms/new'> Add a New Room </a>
-              <br>
+              &nbsp;&nbsp;&nbsp;
+              <a href='/logout'> Log Out </a>
       <%    } else { %>
         <a href='/signup'> Sign Up </a>
         &nbsp;

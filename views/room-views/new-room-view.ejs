@@ -1,17 +1,22 @@
-<h2> Add a Room </h2>
+<h2 class="container text-center"> Add a Room </h2>
 
+<div class="container text-center">
 <form method='post' action='/rooms'>
   <label for='room-name-input'> Room Name </label>
+  <br>
   <input id='room-name-input' type="text" name="roomName">
-  <br>
-  
+  <br><br>
+
   <label for='room-description-input'> Room Description </label>
-  <textarea id='room-description-input' name="roomDescription"></textarea>
   <br>
+  <input id='room-description-input' name="roomDescription"></input>
+  <br><br>
 
   <label for='room-photo-url'> Photo URL </label>
-  <input id='room-photo-url' type="url" name="roomPhotoUrl">
   <br>
+  <input id='room-photo-url' type="url" name="roomPhotoUrl">
+  <br><br>
 
-  <button> Save a Room </button>
+  <button class="btn btn-primary"> Save it! </button>
 </form>
+</div>
