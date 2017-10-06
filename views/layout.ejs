@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+  </head>
+  <body>
+    <header class="container text-center">
+      <nav>
+        <a href='/'> Home </a>
+        &nbsp;
+      <%  if (typeof currentUser === 'object') { %>
+         <!-- If the logged in user variable -->
+              <a href='/special'> Special Place for Logged-In Users </a>
+              <br>
+              <a href='/logout'> Log Out </a>
+              <br>
+              <a href='/rooms/new'> Add a New Room </a>
+              <br>
+      <%    } else { %>
+        <a href='/signup'> Sign Up </a>
+        &nbsp;
+        <a href='/login'> Log In </a>
+        &nbsp;
+        <%  } %>
+
+      </nav>
+    </header>
+    <br><br><br><br>
+
+    <%- body %>
+
+    <br><br><br><br>
+
+    <footer class="container text-center">
+      <p>Simple template made by Crystal for Facebook and Google Logins </p>
+    </footer>
+  </body>
+</html>
