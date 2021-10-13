@@ -11,3 +11,5 @@
 - You can add Angular or React for front-end dev if preferred
 
 - You will need to include your own .env file with credentials for facebook & google auth
+
+- mongoDB required
